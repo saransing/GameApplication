@@ -1,0 +1,42 @@
+.grey-background{
+	-fx-background-color: rgba(255, 255, 255);
+}
+
+.cool-background{
+	-fx-background-color: rgba(242,242,242);
+}
+
+
+.transparent{
+	-fx-background-color: rgba(0,0,0,0);
+}
+
+.round-layour{
+	-fx-border-radius: 50;
+	-fx-border-color: grey;
+}
+
+.round-layour-shopping{
+	-fx-border-radius: 10 10 0 0;
+	-fx-background-radius: 10 10 0 0;
+	-fx-background-color: rgba(242,242,242);
+}
+
+.selected{
+	-fx-background-color: #F3F3F3
+}
+
+.mouse-moved: hover{
+	-fx-background-color:#E4E4E4;
+}
+
+.shadow{
+	-fx-effect:dropShadow(three-pass-box,rgba(0,0,0,0),10,0,0,10);
+}
+
+.round-layour_button{
+	-fx-border-radius: 10;
+	-fx-border-color: grey;
+}
+
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="559.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameApp.client.views.LoginView.LoginViewController">
+   <children>
+      <ImageView fitHeight="572.0" fitWidth="693.0">
+         <image>
+            <Image url="@../../views/styles/9ff7a70d8b6c53cfbd47f2fcdae30e76.jpg" />
+         </image>
+      </ImageView>
+      <FlowPane layoutX="2.0" layoutY="14.0" prefHeight="429.0" prefWidth="658.0">
+         <children>
+            <HBox prefHeight="130.0" prefWidth="673.0">
+               <children>
+                  <ImageView fitHeight="141.0" fitWidth="142.0">
+                     <image>
+                        <Image url="@../../views/styles/3408506.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the World of Games" textAlignment="CENTER" wrappingWidth="354.9365973472595">
+                     <HBox.margin>
+                        <Insets left="50.0" top="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Century Gothic" size="31.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Text>
+               </children>
+            </HBox>
+            <VBox prefHeight="298.0" prefWidth="295.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="87.7366943359375">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Text>
+                  <TextField fx:id="emailField" onMouseClicked="#resetTextField" prefHeight="26.0" prefWidth="401.0" promptText="email" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+                     <VBox.margin>
+                        <Insets top="35.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Text>
+                  <PasswordField fx:id="passwordField" onMouseClicked="#resetTextField" promptText="password" />
+                  <Label fx:id="errorLabel" prefHeight="22.0" prefWidth="308.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#signIn" prefHeight="31.0" prefWidth="78.0" text="Sign in">
+                           <font>
+                              <Font name="Century Gothic" size="16.0" />
+                           </font>
+                           <effect>
+                              <Blend />
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="100.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets right="200.0" />
+               </opaqueInsets>
+               <FlowPane.margin>
+                  <Insets left="210.0" right="200.0" />
+               </FlowPane.margin>
+            </VBox>
+         </children>
+      </FlowPane>
+      <HBox layoutY="469.0" prefHeight="90.0" prefWidth="678.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?" wrappingWidth="153.59015661478043">
+               <HBox.margin>
+                  <Insets left="205.0" top="60.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Century Gothic" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+            <Text onMouseClicked="#register" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a free acount" underline="true" wrappingWidth="159.3999024629593">
+               <HBox.margin>
+                  <Insets top="60.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Century Gothic" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
